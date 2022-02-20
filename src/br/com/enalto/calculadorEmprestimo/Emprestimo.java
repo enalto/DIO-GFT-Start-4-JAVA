@@ -20,7 +20,7 @@ public class Emprestimo {
     }
 
     public boolean taxaDeJurosIsValida(double taxaDeJuros) {
-        if (taxaDeJuros <= 0 || taxaDeJuros > 100) {
+        if (taxaDeJuros <= 0 ^ taxaDeJuros > 100) {
             return false;
         }
         return true;

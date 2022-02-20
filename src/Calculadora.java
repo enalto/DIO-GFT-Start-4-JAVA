@@ -9,9 +9,9 @@ public class Calculadora {
     public static void main(String[] args) {
         leiaNumerosEOperador();
 
-//        if (!validarNumerosEOperadores()) {
-//            throw new IllegalArgumentException();
-//        }
+        if (!validarNumerosEOperadores()) {
+            throw new IllegalArgumentException();
+        }
 
         System.out.println(calcula());
     }
@@ -29,31 +29,31 @@ public class Calculadora {
 
     }
 
-//    private static boolean validarNumerosEOperadores() {
-//        if (numero2 == 0 & operador.equals("/")) {
-//            throw new IllegalArgumentException();
-//        } else if (!operadorIsValid()) {
-//            throw new IllegalArgumentException();
-//        }
-//        return true;
-//    }
+    private static boolean validarNumerosEOperadores() {
+        if (numero2 == 0 & operador.equals("/")) {
+            throw new IllegalArgumentException();
+        } else if (!operadorIsValid()) {
+            throw new IllegalArgumentException();
+        }
+        return true;
+    }
 
-//    private static boolean operadorIsValid() {
-//        switch (operador) {
-//            case "+":
-//                return true;
-//            case "-":
-//                return true;
-//            case "*":
-//                return true;
-//            case "/":
-//                return true;
-//            case "^":
-//                return true;
-//            default:
-//                return false;
-//        }
-//    }
+    private static boolean operadorIsValid() {
+        switch (operador) {
+            case "+":
+                return true;
+            case "-":
+                return true;
+            case "*":
+                return true;
+            case "/":
+                return true;
+            case "^":
+                return true;
+            default:
+                return false;
+        }
+    }
 
     private static double calcula() {
         switch (operador) {

@@ -13,6 +13,7 @@ public class TesteCollectors {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("a", "bb", "ccc", "dd");
 
+        //Criar um mapa com a tamanho das Strings
         Map<String, Integer> result = list.stream()
                 .collect(toMap(Function.identity(), String::length));
 
